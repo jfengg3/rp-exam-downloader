@@ -17,7 +17,7 @@ Students can download past years paper by with their **login** credentials and *
 
 #### Executable
 
-```Simply run the executable (eg. rp-ed.exe)```
+```Simply run the executable (eg. downloader-gui.py)```
 
 #### GUI script
 
@@ -28,7 +28,7 @@ Students can download past years paper by with their **login** credentials and *
 
 **Pre-requisites**
 ```
-  1. Python 3.x.x
+  1. Python 3.x.x (3.5/3.6 is recommended)
   2. requests_nltm (Use to authorize and access the intranet)
   3. urllib.request (An extension for url opening)
   4. BeautifulSoup (Web-parse, pull data out of HTML/XML)
@@ -37,6 +37,11 @@ Students can download past years paper by with their **login** credentials and *
 ```
 
 No documentation on this yet.
+
+## Notes
+My projects are always open-source, feel free to contribute and give feedback on how to further improve the software.
+As of now, it only support Windows (which is fine as students' laptop are configured towards that) however if anyone wants
+to compile it for Mac OS X, feel free to do so.
 
 ## Credits
 
