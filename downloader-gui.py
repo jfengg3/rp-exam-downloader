@@ -24,19 +24,20 @@ class GUIDownloader(object):
         # Get screen size
         x = (root.winfo_screenwidth() - root.winfo_reqwidth()) / 2
         y = (root.winfo_screenheight() - root.winfo_reqheight()) / 2
-        root.geometry("%dx%d" % (x, y))
+
+        root.geometry("+%d+%d" % (x,y))
         root.deiconify()
 
-        root.title('RP Exam Downloader')
+        root.title('RP Exam Downloader - v1.1')
         root.resizable(0, 0)
 
         self.top = Frame(root)
-        self.top.grid(row=0, column=0, padx=220, pady=50)
+        self.top.grid(row=0, column=0, padx=50, pady=20)
         self.top.columnconfigure(0, weight=1)
         self.top.rowconfigure(0, weight=1)
 
         Label_Title = Label(self.top, text='RP Exam Downloader', font=('Arial', 28, 'bold'))
-        Label_Title.grid(row=1, column=0, columnspan=3, padx=20, pady=20)
+        Label_Title.grid(row=1, column=0, columnspan=3, padx=50, pady=20)
 
         Label_Login = Label(self.top, text='Student ID:', font=FONT)
         Label_Login.grid(row=2, column=0)

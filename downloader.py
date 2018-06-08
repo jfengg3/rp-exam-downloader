@@ -38,21 +38,27 @@ class downloader(object):
                 updateStatus("Successfully connected to online library...", 'success')
 
                 #-- Search for module
-                mod_url = 'https://libopac.rp.edu.sg/client/en_GB/home/search/results?qu=' + module
+                mod_url = 'https://libopac.rp.edu.sg/client/en_GB/home/search/results?qu=' + module + '&te=ILS'
 
                 mod_r = requests.get(mod_url)
                 mod_c = mod_r.content
 
                 mod_soup = bs(mod_c, "lxml")
 
+                #-- We exclude everything except "intranet" as it is where the resources are located
+                mod_exclude = mod_soup.findAll('a', href=re.compile("intranet"))
+                #-- Count every possible mod_exclude results that will appear
                 count = 0
 
-                #-- We exclude everything except "intranet" as it is where the resources are located
-                for mod_tag in mod_soup.findAll('a', href=re.compile("intranet")):
-                    mod_temp_url = mod_tag['href']
+                for mod_tag in mod_exclude:
                     count = count + 1
 
+                #-- If "intranet" found ...
                 if count > 0:
+                    #-- temp_url will be the first query found
+                    #-- (We do this because in exceptional cases, they will return multiple modules instead of the queried one)
+                    mod_temp_url = mod_exclude[0]['href']
+
                     mod_new_url = mod_temp_url.replace(" ", "%20")
                     updateStatus(("Module %s found, begin download query..." % module), 'success')
 
@@ -88,8 +94,10 @@ class downloader(object):
 
                     updateStatus("Downloaded %d files" %(i), 'success')
 
+                #-- If module is not found, return
                 else:
                     updateStatus("Sorry, the module is not found in our database.", 'error')
+
 
             # If status_code returns 401 -> user's credentials failed therefore not authorized
             else:
