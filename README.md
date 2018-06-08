@@ -17,7 +17,7 @@ Students can download past years paper by with their **login** credentials and *
 
 #### Executable
 
-```Simply run the executable (eg. downloader-gui.py)```
+```Simply run the executable (eg. downloader-gui.exe)```
 
 #### GUI script
 
