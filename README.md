@@ -6,7 +6,7 @@ Executable or script to download past years paper
 
 RP Exam Downloader is a lightweight software that is designed with the idea in mind, "fast and straightforward".
 
-Students can download past years paper by with their **login** credentials and **module** code.
+Students can download past years paper with their **login** credentials and **module** code.
 
 ![Imgur](https://i.imgur.com/jiJPNB0.png)
 
