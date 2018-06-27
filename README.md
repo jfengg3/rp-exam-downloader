@@ -1,4 +1,4 @@
-# rp-exam-downloader
+# RP Exam Downloader
 Executable or script to download past years paper
 
 ## Description 
