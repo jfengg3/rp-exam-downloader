@@ -4,9 +4,9 @@ Executable or script to download past years paper
 ## Description 
 ##### Inspired by [NUS Exams Downloader](https://github.com/nusmodifications/nus-exams-downloader)
 
-RP Exam Downloader is a lightweight software that is designed with the idea in mind, "fast and straightforward".
+RP Exam Downloader is a lightweight software designed to ease the process of downloading papers from the intranet.
 
-Students can download past years paper with their **login** credentials and **module** code.
+Students can download past years paper with their **RP login** credentials and **module** code.
 
 ![Imgur](https://i.imgur.com/jiJPNB0.png)
 
@@ -19,7 +19,7 @@ Students can download past years paper with their **login** credentials and **mo
 
 ```Simply run the executable (eg. downloader-gui.exe)```
 
-#### GUI script
+#### Script
 
 ```$ python downloader-gui.py```
 
@@ -36,13 +36,9 @@ Students can download past years paper with their **login** credentials and **mo
     - External modules can be installed easily using pip (eg. pip install requests_nltm)
 ```
 
-No documentation on this yet.
-
 ## Notes
-My projects are always open-source, feel free to contribute and give feedback on how to further improve the software.
-As of now, it only support Windows (which is fine as students' laptop are configured towards that) however if anyone wants
-to compile it for Mac OS X, feel free to do so.
+My projects will always be open-sourced, feel free to contribute and give feedback on improving the software.
+As of now, it supports only Windows. If anyone wants to compile it for Mac OS X, go ahead and leave me a message so I can upload it with the Windows version.
 
 ## Credits
-
 - Pang Jing Jie
