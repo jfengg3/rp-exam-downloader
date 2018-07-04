@@ -36,9 +36,13 @@ Students can download past years paper with their **RP login** credentials and *
     - External modules can be installed easily using pip (eg. pip install requests_nltm)
 ```
 
-## Notes
+## Contributing
 My projects will always be open-sourced, feel free to contribute and give feedback on improving the software.
 As of now, it supports only Windows. If anyone wants to compile it for Mac OS X, go ahead and leave me a message so I can upload it with the Windows version.
+
+For making of changes, please do a [pull request](https://github.com/evelystria/rp-exam-downloader/pulls).
+
+For reporting bugs, please create a [new issue](https://github.com/evelystria/rp-exam-downloader/issues).
 
 ## Credits
 - Pang Jing Jie
