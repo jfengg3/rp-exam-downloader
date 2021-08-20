@@ -43,6 +43,3 @@ As of now, it supports only Windows. If anyone wants to compile it for Mac OS X,
 For making of changes, please do a [pull request](https://github.com/evelystria/rp-exam-downloader/pulls).
 
 For reporting bugs, please create a [new issue](https://github.com/evelystria/rp-exam-downloader/issues).
-
-## Credits
-- Pang Jing Jie
